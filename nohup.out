@@ -1,0 +1,116 @@
+[I 2024-08-20 13:15:41.349 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-08-20 13:15:41.350 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-08-20 13:15:41.352 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-08-20 13:15:41.354 ServerApp] notebook | extension was successfully linked.
+[I 2024-08-20 13:15:41.450 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-08-20 13:15:41.465 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-08-20 13:15:41.466 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-08-20 13:15:41.466 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-08-20 13:15:41.468 LabApp] JupyterLab extension loaded from /Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyterlab
+[I 2024-08-20 13:15:41.468 LabApp] JupyterLab application directory is /Users/kruthiwusirika/.pyenv/versions/3.9.10/share/jupyter/lab
+[I 2024-08-20 13:15:41.468 LabApp] Extension Manager is 'pypi'.
+[I 2024-08-20 13:15:41.476 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-08-20 13:15:41.478 ServerApp] notebook | extension was successfully loaded.
+[I 2024-08-20 13:15:41.478 ServerApp] Serving notebooks from local directory: /Users/kruthiwusirika/Desktop/AI_APPLICATIONS
+[I 2024-08-20 13:15:41.478 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2024-08-20 13:15:41.478 ServerApp] http://localhost:8888/tree?token=672bb5b0d0641cc2388563dabb44511838ee4e65153e31ec
+[I 2024-08-20 13:15:41.478 ServerApp]     http://127.0.0.1:8888/tree?token=672bb5b0d0641cc2388563dabb44511838ee4e65153e31ec
+[I 2024-08-20 13:15:41.478 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-08-20 13:15:41.481 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/kruthiwusirika/Library/Jupyter/runtime/jpserver-58607-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=672bb5b0d0641cc2388563dabb44511838ee4e65153e31ec
+        http://127.0.0.1:8888/tree?token=672bb5b0d0641cc2388563dabb44511838ee4e65153e31ec
+[I 2024-08-20 13:15:41.695 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-08-20 13:15:44.449 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184944446 (::1): Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b
+[W 2024-08-20 13:15:44.450 ServerApp] wrote error: 'Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b'
+    Traceback (most recent call last):
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b)
+[W 2024-08-20 13:15:44.454 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184944446 (e7984deca6e7407f8a8da9424665a232@::1) 5.04ms referer=http://localhost:8888/notebooks/Week%201/Day%202/Pythonic_RAG_Assignment.ipynb
+[W 2024-08-20 13:15:45.450 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b/channels?session_id=0ed938a4-b088-45cf-b1b6-92696d6c41ce (::1): Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b
+[W 2024-08-20 13:15:45.461 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b/channels?session_id=0ed938a4-b088-45cf-b1b6-92696d6c41ce (e7984deca6e7407f8a8da9424665a232@::1) 11.87ms referer=None
+[W 2024-08-20 13:15:45.465 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184945462 (::1): Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b
+[W 2024-08-20 13:15:45.465 ServerApp] wrote error: 'Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b'
+    Traceback (most recent call last):
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b)
+[W 2024-08-20 13:15:45.466 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184945462 (e7984deca6e7407f8a8da9424665a232@::1) 0.60ms referer=http://localhost:8888/notebooks/Week%201/Day%202/Pythonic_RAG_Assignment.ipynb
+[W 2024-08-20 13:15:47.529 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b/channels?session_id=0ed938a4-b088-45cf-b1b6-92696d6c41ce (::1): Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b
+[W 2024-08-20 13:15:47.531 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b/channels?session_id=0ed938a4-b088-45cf-b1b6-92696d6c41ce (e7984deca6e7407f8a8da9424665a232@::1) 2.69ms referer=None
+[W 2024-08-20 13:15:47.534 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184947531 (::1): Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b
+[W 2024-08-20 13:15:47.535 ServerApp] wrote error: 'Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b'
+    Traceback (most recent call last):
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/Users/kruthiwusirika/.pyenv/versions/3.9.10/lib/python3.9/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 69bde31b-1969-47bb-994a-b471bcb8ce8b)
+[W 2024-08-20 13:15:47.535 ServerApp] 404 GET /api/kernels/69bde31b-1969-47bb-994a-b471bcb8ce8b?1724184947531 (e7984deca6e7407f8a8da9424665a232@::1) 1.70ms referer=http://localhost:8888/notebooks/Week%201/Day%202/Pythonic_RAG_Assignment.ipynb
+[W 2024-08-20 13:16:04.725 ServerApp] Notebook Week 1/Day 2/Pythonic_RAG_Assignment.ipynb is not trusted
+[W 2024-08-20 13:16:05.006 ServerApp] Notebook Week 1/Day 2/Pythonic_RAG_Assignment.ipynb is not trusted
+[I 2024-08-20 13:16:05.232 ServerApp] Kernel started: 03475f8d-2341-4438-b4c8-e760762f09c9
+[I 2024-08-20 13:16:05.555 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:16:05.556 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:16:05.567 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[W 2024-08-20 13:16:05.585 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x10d87a8b0>
+[I 2024-08-20 13:16:13.465 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:16:38.748 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[W 2024-08-20 13:16:45.634 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:16:45.796 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[W 2024-08-20 13:16:45.863 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:16:46.018 ServerApp] Kernel started: 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93
+[I 2024-08-20 13:16:46.230 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[I 2024-08-20 13:18:05.470 ServerApp] Saving file at /Week 1/Day 2/Pythonic_RAG_Assignment.ipynb
+[W 2024-08-20 13:18:05.472 ServerApp] Notebook Week 1/Day 2/Pythonic_RAG_Assignment.ipynb is not trusted
+[I 2024-08-20 13:18:46.465 ServerApp] Saving file at /Week 1/Day 2/Embedding_Primer.ipynb
+[W 2024-08-20 13:18:46.465 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:18:52.392 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:18:52.404 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[I 2024-08-20 13:19:22.164 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:19:22.176 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[W 2024-08-20 13:19:22.228 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:19:22.363 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[I 2024-08-20 13:20:01.706 ServerApp] Connecting to kernel 03475f8d-2341-4438-b4c8-e760762f09c9.
+[I 2024-08-20 13:20:01.719 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[W 2024-08-20 13:20:01.775 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:20:01.904 ServerApp] Connecting to kernel 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93.
+[I 2024-08-20 13:20:10.980 ServerApp] Kernel started: 610abd72-2756-46a4-b9e1-d589c7c49c27
+[I 2024-08-20 13:20:10.981 ServerApp] Kernel shutdown: 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93
+[I 2024-08-20 13:20:11.182 ServerApp] Starting buffering for 2ad4f001-f5a9-4f28-a2a6-53b746e4fe93:5a61b1a1-918f-4d47-9b0f-95a0830ae9a5
+[I 2024-08-20 13:20:11.353 ServerApp] Connecting to kernel 610abd72-2756-46a4-b9e1-d589c7c49c27.
+[I 2024-08-20 13:20:17.694 ServerApp] Kernel restarted: 610abd72-2756-46a4-b9e1-d589c7c49c27
+[I 2024-08-20 13:20:17.698 ServerApp] Starting buffering for 610abd72-2756-46a4-b9e1-d589c7c49c27:5a61b1a1-918f-4d47-9b0f-95a0830ae9a5
+[I 2024-08-20 13:20:17.702 ServerApp] Connecting to kernel 610abd72-2756-46a4-b9e1-d589c7c49c27.
+[I 2024-08-20 13:20:17.702 ServerApp] Restoring connection for 610abd72-2756-46a4-b9e1-d589c7c49c27:5a61b1a1-918f-4d47-9b0f-95a0830ae9a5
+[I 2024-08-20 13:20:51.025 ServerApp] Kernel interrupted: 610abd72-2756-46a4-b9e1-d589c7c49c27
+[I 2024-08-20 13:22:01.802 ServerApp] Saving file at /Week 1/Day 2/Embedding_Primer.ipynb
+[W 2024-08-20 13:22:01.802 ServerApp] Notebook Week 1/Day 2/Embedding_Primer.ipynb is not trusted
+[I 2024-08-20 13:22:29.697 ServerApp] Starting buffering for 610abd72-2756-46a4-b9e1-d589c7c49c27:5a61b1a1-918f-4d47-9b0f-95a0830ae9a5
+[I 2024-08-20 13:22:30.090 ServerApp] Starting buffering for 03475f8d-2341-4438-b4c8-e760762f09c9:8ea08fd0-623f-483d-ad66-78393463e973
